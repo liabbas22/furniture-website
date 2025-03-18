@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import "./style.css";
 
 const StockTime = () => {
-  const discountEndTime = new Date(2025, 2, 11, 10, 0, 0).getTime();
+  const discountEndTime = new Date(2025, 12, 30, 12, 0, 0).getTime();
 
   const calculateTimeLeft = useCallback(() => {
     const difference = discountEndTime - Date.now();
