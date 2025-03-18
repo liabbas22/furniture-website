@@ -1,0 +1,348 @@
+:root {
+  --colorGreen: #339059;
+  --grayColor: rgb(76, 76, 76);
+  --lightGtay: #bbb;
+}
+
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.Blog_container {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.Blog_container .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+}
+
+.blogtext-container button {
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--colorGreen);
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 2px;
+  z-index: 2;
+  opacity: 0.8;
+}
+.blogtext-container button:hover {
+  background-color: #379d61;
+  text-decoration: underline;
+}
+.shopify {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.shopify .shopify_Api {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.shopify_Api p {
+  color: var(--colorGreen);
+  cursor: pointer;
+}
+.slash {
+  font-size: 12px;
+  color: #787878;
+}
+.blog_card {
+  position: relative !important;
+}
+.blog_card .Blog_date {
+  position: absolute !important;
+  top: 5%;
+  left:2%;
+}
+
+.Blog_container .blog_textContainer {
+  width: 100%;
+  text-align: left;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog_textContainer .p1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.8;
+}
+.blog_textContainer .p2 {
+  font-size: 14px;
+  color: #4c4c4c;
+  line-height: 1.8;
+}
+
+.best_clothing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+.best_clothing .image_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.best_clothing .image_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.best_clothing .text_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: flex-start;
+}
+.best_clothing .text_box h3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.best_clothing .text_box h3 span {
+  color: #1daaa3;
+}
+.best_clothing .text_box ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 2;
+  color: #4c4c4c;
+  font-size: 14px;
+}
+.best_clothing .text_box ul li span {
+  color: #1aada3;
+  font-size: 18px;
+  padding-top: 3px;
+}
+.best_clothing .text {
+  line-height: 1.8;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #4c4c4c;
+}
+.left .p_text,
+.left .p2 {
+  text-align: left;
+  font-size: 14px;
+  color: #4c4c4c;
+  line-height: 1.8;
+  margin: 30px 0;
+  font-weight: 300;
+}
+
+.View-More {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 10px 50px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0 20px 0;
+}
+.View-More:hover {
+  background-color: #000;
+  color: #fff;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+.social-icons .Icon {
+  font-size: 30px;
+}
+
+.Blog_container .right {
+  width: 30%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.right h2 {
+  position: relative;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding-bottom: 2px;
+}
+
+.right h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  width: 35%;
+  height: 1px;
+  background-color: rgba(129, 129, 129, 0.25);
+  transform: translateX(-50%);
+}
+
+.right .input_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right .input_box input {
+  padding: 10px 10px;
+  font-size: 14px;
+  outline: none;
+  border-right: none;
+  border: 1px solid rgba(129, 129, 129, 0.25);
+}
+.right .input_box button {
+  padding: 10px 10px;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background-color: #339059;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.right .input_box button:hover {
+  background-color: #50bc7d;
+}
+.recentPost_box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.post {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post img {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+}
+.post .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
+}
+.post .text h5 {
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.post .text h5:hover {
+  color: #3b855a;
+  border-bottom: 1px solid rgba(142, 141, 141, 0.9);
+}
+.post .text p {
+  color: #bbb;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Blog_Top-Container {
+    margin-bottom: 20px;
+  }
+  .text_container h1 {
+    font-size: 30px;
+  }
+  .text_container .blog_icons {
+    gap: 7px;
+  }
+  .content-wrapper {
+    width: 40%;
+  }
+  .Blog_container {
+    padding: 30px 0;
+    gap: 10px;
+  }
+  .Blog_container .left {
+    width: 60%;
+  }
+  .blog_card .Blog_date {
+    left: 1%;
+  }
+  .blog_textContainer .p1 {
+    font-size: 16px;
+  }
+  .best_clothing {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .best_clothing .text_box h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  }
+  .best_clothing .text_box ul li {
+    line-height: 1.6;
+  }
+  .best_clothing .text {
+    margin: 10px 0;
+  }
+  .left .p_text,
+  .left .p2 {
+    margin: 20px 0;
+  }
+  .social-icons .Icon {
+    font-size: 25px;
+  }
+  .Blog_container .right {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Blog_container {
+  flex-direction: column;
+  }
+  .Blog_container .left {
+  width: 100%;
+  }
+}

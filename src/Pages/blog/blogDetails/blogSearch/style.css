@@ -1,0 +1,68 @@
+:root {
+  --colorGreen: #339059;
+  --grayColor: rgb(76, 76, 76);
+  --lightGtay: #bbb;
+}
+.blogSearch {
+  width: 100%;
+}
+.blogSearch .searchBlog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0;
+}
+.searchBlog-container .SearchBlog-Item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.searchBlog-container .SearchBlog-Item .date {
+  position: absolute;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.searchBlog-container .SearchBlog-Item .title {
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.searchBlog-container .SearchBlog-Item img {
+  padding: 20px 0;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.searchBlog-container .SearchBlog-Item:hover img {
+  transform: scale(1.1);
+}
+.searchBlog-container .SearchBlog-Item p {
+  color: #4c4c4c;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.SearchBlog-Item .Icons-container {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.SearchBlog-Item .Icons-container span {
+  padding: 10px 15px 5px 15px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #8f8f8f;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.SearchBlog-Item .Icons-container span:hover {
+  background-color: #000;
+  color: #fff;
+}

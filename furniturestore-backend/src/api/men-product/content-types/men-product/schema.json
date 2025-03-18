@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "men_products",
+  "info": {
+    "singularName": "men-product",
+    "pluralName": "men-products",
+    "displayName": "menProduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "firstMoney": {
+      "type": "decimal"
+    },
+    "lastMoney": {
+      "type": "decimal"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

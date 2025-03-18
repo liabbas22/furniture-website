@@ -1,0 +1,108 @@
+.shop {
+  width: 100%;
+  padding: 15px 0;
+}
+.shop .backPage {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+.backPage .home {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.backPage .home svg {
+  font-size: 14px;
+}
+.backPage .home p {
+  font-weight: 300;
+}
+.salah {
+  font-size: 10px;
+}
+.all {
+  color: #9e9e9e;
+}
+
+.shopCard-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.shopCard-container .product-box {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+}
+.product-image {
+  width: 100%;
+  height: 65%;
+}
+.product-text h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-text .des {
+  white-space: wrap;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  line-height: 1.6;
+  padding: 5px 0;
+  font-size: 14px;
+  color: #444;
+}
+.Add-cart {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  bottom: -80px;
+  transition: all 0.3s ease-in-out;
+}
+.shopCard-container .product-box:hover .Add-cart {
+  bottom: 0;
+}
+.Add-cart svg {
+  font-size: 18px;
+}
+.product-text .category {
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #a19f9f;
+}
+.price-value {
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .shop {
+    padding: 20px 0;
+  }
+  .shop .backPage {
+    margin-left: 5px;
+  }
+  .shopCard-container {
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .shopCard-container {
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+}

@@ -1,0 +1,100 @@
+:root {
+  --colorGreen: #339059;
+  --grayColor: rgb(76, 76, 76);
+}
+.top-container {
+  width: 100%;
+  height: 40px;
+  background-color: #339059;
+}
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.top-container .Main-Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0px;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.top-container .Main-Container .left {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.top-container .Main-Container .left .phoneNumber-Box {
+  display: flex;
+
+  gap: 5px;
+  align-items: center;
+}
+.Main-Container .left .phoneNumber-Box .phoneNumber {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.Main-Container .left .call-Icon {
+  background-color: #fff;
+  color: #339059;
+  width: 12px;
+  height: 10px;
+  font-size: 8px;
+  border-radius: 2px;
+}
+
+.top-container .Main-Container .right ul {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  list-style: none;
+}
+.top-container .Main-Container .right ul .Account-Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.right ul .Account-Box .person-Icon {
+  font-size: 15px;
+  height: 20px;
+}
+.top-container .Main-Container .right ul li {
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.top-container .Main-Container .right ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 0.8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: width 0.3s ease;
+}
+
+.top-container .Main-Container .right ul li:hover::after {
+  width: 100%;
+}
+.Link {
+  color: #ffff;
+}
+@media only screen and (max-width: 1024px) {
+  .top-container .Main-Container .right {
+    display: none;
+  }
+  .top-container .Main-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

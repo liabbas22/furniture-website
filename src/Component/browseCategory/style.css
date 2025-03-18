@@ -1,0 +1,53 @@
+:root {
+  --colorGreen: #2daf63;
+  --grayColor: rgb(76, 76, 76);
+  --lightGtay: #bbb;
+  --yellow: rgb(240, 191, 76);
+  --yellowlight: rgb(212, 237, 49);
+}
+.ContentWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.BrowserCategory {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 243px 0;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.BrowserCategory ul {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: #3aa968;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 5px 0;
+}
+.BrowserCategory ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.BrowserCategory ul li .icon {
+  padding-top: 5px;
+  font-size: 20px;
+}
+.BrowserCategory ul li:hover {
+  background-color: rgb(240, 191, 76);
+}
+
+@media only screen and (max-width: 1024px) {
+  .BrowserCategory {
+    display: none;
+  }
+}

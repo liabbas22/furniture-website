@@ -1,0 +1,312 @@
+:root {
+  --colorGreen: #339059;
+  --grayColor: rgb(76, 76, 76);
+  --lightGtay: #bbb;
+}
+.faqs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 70vh;
+  background-image: url("../../Assets//faq.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.faqs h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 78px;
+  font-weight: 400;
+  color: #fff;
+}
+.faqs .Faq-Icon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-end;
+  justify-content: right;
+  gap: 40px;
+  color: #fff;
+}
+.faqs .Faq-Icon .Icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.faqs .Faq-Icon .Icon .icon {
+  margin-top: 10px;
+  font-size: 50px;
+}
+.faqs .Faq-Icon .Icon .text-container {
+  font-size: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #fff;
+}
+.faqs .Faq-Icon .Icon .text-container p {
+  letter-spacing: 1px;
+}
+.faq-information {
+  width: 100%;
+  height: auto;
+  background-color: #f9f9f9 !important;
+}
+.faq-information {
+  width: 100%;
+  padding: 20px 0;
+}
+.faq-Container {
+  width: 100%;
+}
+.faq-Container h1 {
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.faq-Container .faq-information-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.faq-Container .faq-information-container .box {
+  margin-bottom: 20px;
+}
+.faq-Container .faq-information-container .box h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.faq-Container .faq-information-container .box p {
+  font-size: 12px;
+  color: #6e6c6c;
+  letter-spacing: 1px;
+  font-weight: 300px;
+}
+.faq-bottom-container-info {
+  width: 100%;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.faq-bottom-container-info .Ask-Question {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+.faq-bottom-container-info .Ask-Question h2 {
+  font-size: 18px;
+  color: #383838;
+  font-weight: 500;
+  letter-spacing: 0.5x;
+}
+.faq-bottom-container-info .Ask-Question p {
+  margin: 20px 0;
+  font-size: 12px;
+  color: #b4b4b4;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+}
+.faq-bottom-container-info .Ask-Question .input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.Ask-Question .input-container .input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.Ask-Question .input-container .input span {
+  font-size: 13px;
+  font-weight: 300;
+}
+.Ask-Question .input-container .input input,
+.Ask-Question .input-container .input textarea {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.Ask-Question .input-container .email input {
+  outline: 1px solid #e0b252;
+}
+.Ask-Question .input-container .input textarea {
+  height: 250px;
+  resize: vertical;
+}
+.Ask-Question .input-container .btn {
+  padding: 8px 15px;
+  font-size: 12px;
+  background-color: var(--colorGreen);
+  transition: all 0.3s ease-in-out;
+  color: #ffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border-radius: 2px;
+}
+.Ask-Question .input-container .btn:hover {
+  background-color: #4eb178;
+}
+
+.sale-container {
+  width: 100%;
+  padding: 20px 0;
+  top: 50px;
+}
+.sale-container .saleQuestionAnswer {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.sale-container .saleQuestionAnswer .Question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+.sale-container .saleQuestionAnswer span,
+.sale-container .saleQuestionAnswer .Answer p {
+  font-size: 12px;
+  color: #818181;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.sale-container .saleQuestionAnswer .Question .arrow {
+  font-size: 20px;
+  color: #818181;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.sale-container .saleQuestionAnswer .Question:hover .arrow {
+  color: #b4b1b1;
+}
+.Arrow-rotate {
+  rotate: 180deg;
+}
+.sale-container .saleQuestionAnswer .Answer {
+  margin-top: 20px;
+}
+.sale-container .saleQuestionAnswer .Answer p {
+  margin-bottom: 20px;
+}
+
+.faqBottom {
+  padding: 20px 0;
+  width: 100%;
+  height: 400px;
+  background-image: url(../../Assets/FaqBottom.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+.faqBottom .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.faqBottom .col span {
+  border: 1px solid #fff;
+  padding: 15px 15px 10px 15px;
+  border-radius: 50%;
+}
+.faqBottom .col span svg {
+  color: #fff;
+  font-size: 40px;
+}
+.faqBottom .col h3 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.faqBottom .col p {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .faqs {
+    padding: 20px 10px;
+    height: auto;
+  }
+  .faqs h1 {
+    font-size: 60px;
+  }
+  .faqs .Faq-Icon {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+  .faq-Container h1 {
+    font-size: 30px;
+  }
+  .faq-Container .faq-information-container .box {
+    margin-bottom: 10px;
+  }
+  .faq-Container .faq-information-container .box h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .faqs h1 {
+    font-size: 40px;
+  }
+  .faq-Container h1 {
+    font-size: 26px;
+  }
+  .faq-Container .faq-information-container .box h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .faq-Container .faq-information-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .faq-bottom-container-info {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .faqBottom {
+    padding: 30px 0;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+  .faqBottom .col {
+    gap: 10px;
+  }
+  .faqBottom .col span svg {
+    font-size: 30px;
+  }
+  .faqBottom .col h3 {
+    font-size: 26px;
+  }
+  .faqBottom .col p {
+    font-size: 14px;
+  }
+}

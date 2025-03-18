@@ -1,0 +1,120 @@
+:root {
+  --colorGreen: #339059;
+  --grayColor: rgb(76, 76, 76);
+  --lightGray: #bbb;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 40px 0 20px 0; 
+  background-color: #000;
+  color: #fff;
+}
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+.footer-icons svg {
+  font-size: 20px;
+  color: var(--lightGray);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer-icons svg:hover {
+  color: #fff;
+}
+.footer-icons .emailIcon {
+  font-size: 22px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  padding: 40px 0;
+}
+.footer-container .footerlist {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-container .footerlist h3 {
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 2px;
+  position: relative;
+}
+.footer-container .footerlist h3::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: block;
+  width: 15%;
+  margin: auto;
+  border-bottom: 3px solid #fff;
+}
+.footer-container .footerlist ul,
+.about ul {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: left;
+}
+.footerlist ul li,
+.about ul p {
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.footerlist ul li:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+}
+
+.about ul .list-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.border-text {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (max-width: 1024px) {
+  .content-wrapper {
+    width: 40%;
+  }
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-container .footerlist {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content-wrapper {
+    width: 40%;
+  }
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

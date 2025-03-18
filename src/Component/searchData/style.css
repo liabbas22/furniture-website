@@ -1,0 +1,29 @@
+.productnotfound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 40vh;
+}
+.productnotfound .text {
+  display: flex;
+  font-size: 30px;
+  color: #444;
+  text-transform: capitalize;
+}
+.productLength {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #212121;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+}
+.productLength span {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

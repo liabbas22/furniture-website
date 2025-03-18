@@ -1,0 +1,124 @@
+:root {
+  --colorGreen: #339059;
+  --grayColor: rgb(76, 76, 76);
+  --lightGtay: #bbb;
+}
+.feactureCategory {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  margin: 80px 0;
+  background-image: url("../../Assets/feactureCategory.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+.top-content span {
+  color: var(--colorGreen);
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.top-content h2 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+.feactureCategory .feactureCategory-conainer {
+  position: absolute;
+  background-color: #fff;
+  height: 400px;
+  width: 80%;
+  left: 10%;
+  bottom: -90px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.feactureCategory-conainer .image_box {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f6f6;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.feactureCategory-conainer .image_box:hover img {
+  transform: scale(1.09);
+}
+.image_box img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+.image_box .text {
+  padding: 10px 20px;
+  background-color: #fff;
+  display: block;
+  z-index: 2;
+  font-style:italic !important;
+  font-size: 18px;
+}
+@media only screen and (max-width: 1024px) {
+  .feactureCategory {
+    height: 650px;
+  }
+  .content-wrapper {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .feactureCategory .feactureCategory-conainer {
+    width: 90%;
+    height: 620px;
+    left: 5%;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+  .feactureCategory-conainer .image_box {
+    width: 100%;
+    height: auto;
+  }
+  .image_box img {
+    width: 75%;
+  }
+
+}
+@media only screen and (max-width: 760px) {
+  .feactureCategory {
+    height: 850px;
+  }
+  .feactureCategory .feactureCategory-conainer {
+    width: 100%;
+    height: 800px;
+    left: 0;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image_box img {
+    width: 75%;
+  }
+  .image_box .text {
+    font-size: 16px;
+  }
+}
